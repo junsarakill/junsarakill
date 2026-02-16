@@ -1,3 +1,34 @@
+# 🛠️ 불편거리 해소장
+
+일상의 반복적인 불편함을 발견하고, 이를 해결하기 위해 직접 만든 도구들을 기록하는 공간입니다.
+
+### 📦 해결 도구 목록
+* [JKGameHotKey](https://github.com/junsarakill/JKGameHotKey) - 프로그램 별 가상 키 매핑 / 단축키 지원을 안 하는 게임을 위한
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 참여 프로젝트 정리
 - 콜옵 블옵2 모작 | 아군 AI 및 미션 진행 파트 | 언리얼 | [https://github.com/junsarakill/CODBO](url) | 2024 8월
 - 비행 훈련 시뮬레이션 | 대항군 및 미션 진행 | 언리얼 | [https://github.com/MTVS-AirJet/MTVS_AirJet_Final](url) | 2024 9월~12월(예정)
