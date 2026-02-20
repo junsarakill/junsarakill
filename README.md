@@ -24,6 +24,7 @@
   - **Hardware-Software Bridge**: 로지텍 G-Hub 등 하드웨어 매크로와 소프트웨어 스크립트를 결합하여 물리 버튼의 한계를 극복한 사용자 정의 워크플로우 구현
   - **Zero-UI Background Operation**: 윈도우 시작 시 자동 실행되어 백그라운드에서 상주하며, 최소한의 리소스로 하드웨어 버튼의 활용도를 극대화
   - **Conflict-Free Mapping**: 일반 키보드에 존재하지 않는  키를 활용함으로써 기존 애플리케이션과의 단축키 충돌 가능성을 원천 차단
+  </details>
 
 
 
