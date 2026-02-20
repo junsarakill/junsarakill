@@ -15,6 +15,17 @@
   - **Window Layout & Visuals**: 전역 핫키 기반 창 위치 관리 및 가상키 시각화 오버레이 지원
   </details>
 
+* **[JKMediaHotKey](https://github.com/junsarakill/JKMediaHotKey)** : 게임 환경에서의 입력 차단을 우회하는 시스템 레벨 미디어 제어 유틸리티
+  <details>
+  <summary>주요 기능 및 특징</summary>
+  
+  - **Input Hook Bypass**: 특정 게임이 마우스/키보드 입력을 독점(Exclusive Mode)하여 미디어 키가 작동하지 않는 현상을 가상 키(`F13`) 매핑을 통해 해결
+  - **Low-Level Message Transmission**: 단순 키 에뮬레이션이 아닌 `WM_APPCOMMAND`(0x319) 메시지를 시스템(Program Manager)에 직접 포스팅하여 가장 확실한 실행 보장
+  - **Hardware-Software Bridge**: 로지텍 G-Hub 등 하드웨어 매크로와 소프트웨어 스크립트를 결합하여 물리 버튼의 한계를 극복한 사용자 정의 워크플로우 구현
+  - **Zero-UI Background Operation**: 윈도우 시작 시 자동 실행되어 백그라운드에서 상주하며, 최소한의 리소스로 하드웨어 버튼의 활용도를 극대화
+  - **Conflict-Free Mapping**: 일반 키보드에 존재하지 않는  키를 활용함으로써 기존 애플리케이션과의 단축키 충돌 가능성을 원천 차단
+
+
 
 
 
