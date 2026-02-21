@@ -34,7 +34,7 @@
   - **Resource Loss Minimization**: 초과 점수 소멸 시스템에 대응하여 자원 낭비를 최소화하는 '최저 과잉 지점' 자동 추적
   - **Heuristic Result Ranking**: 산출된 다수의 경우의 수 중 아이템 소모 효율이 가장 높은 상위 5개 조합을 정렬하여 제시
   - **Dynamic Input Processing**: 사용자의 실시간 인벤토리 상태를 반영하여 유연한 연산 수행 및 결과 도출
-  - **Zero-Dependency CLI**: 별도의 라이브러리 설치 없이 Python 표준 라이브러리만으로 구동되는 가벼운 실행 환경
+  - **Portable Executable Build**: PyInstaller를 통한 단일 .exe 파일 빌드로 Python 환경이 없는 유저에게도 Zero-Dependency 실행 환경 제공
   </details>
 
 
