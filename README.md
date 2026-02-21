@@ -26,8 +26,19 @@
   - **Conflict-Free Mapping**: 일반 키보드에 존재하지 않는  키를 활용함으로써 기존 애플리케이션과의 단축키 충돌 가능성을 원천 차단
   </details>
 
+* **[JKGf2MegamdoCalc](https://github.com/junsarakill/JKGf2MegamdoCalc)** : 소녀전선 2 호감도 자원 소모 최적화 산출기
+  <details>
+  <summary>주요 기능 및 특징</summary>
+
+  - **Recursive Optimization Engine**: 정확한 목표치 도달이 불가능할 경우, 목표 값을 단계적으로 보정($+5$)하며 최적의 해를 찾는 재귀 알고리즘 탑재
+  - **Resource Loss Minimization**: 초과 점수 소멸 시스템에 대응하여 자원 낭비를 최소화하는 '최저 과잉 지점' 자동 추적
+  - **Heuristic Result Ranking**: 산출된 다수의 경우의 수 중 아이템 소모 효율이 가장 높은 상위 5개 조합을 정렬하여 제시
+  - **Dynamic Input Processing**: 사용자의 실시간 인벤토리 상태를 반영하여 유연한 연산 수행 및 결과 도출
+  - **Zero-Dependency CLI**: 별도의 라이브러리 설치 없이 Python 표준 라이브러리만으로 구동되는 가벼운 실행 환경
+  </details>
 
 
+---
 
 
 
