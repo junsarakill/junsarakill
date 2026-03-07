@@ -37,8 +37,20 @@
   - **Portable Executable Build**: PyInstaller를 통한 단일 .exe 파일 빌드로 Python 환경이 없는 유저에게도 Zero-Dependency 실행 환경 제공
   </details>
 
+---
+
+* **[JK-fix-portrait-cursor-desync](https://github.com/junsarakill/JK-fix-portrait-cursor-desync)** : 디스플레이 회전 시 발생하는 커서 축 불일치(Desync) 해결 기록
+  <details>
+  <summary>해결 과정 및 인사이트</summary>
+
+  - **Root Cause Investigation**: 디스플레이 방향 전환(가로↔세로) 시 OS 신호와 마우스 렌더링 레이어 간의 동기화 오류 현상 분석
+  - **Iterative Hypothesis Testing**: 마우스 포인터 자국(Trails) 설정 및 PowerShell 기반 시스템 API 호출을 통한 소프트웨어적 복구 시도 및 한계 검증
+  - **Hardware-Level Resolution**: 모니터 가변 주사율 기술(FreeSync/VRR)과 커서 렌더링 엔진 간의 상관관계를 파악하여 OSD 설정을 통한 근본적 해결 달성
+  - **Evidence-Based Debugging**: 실패한 자동화 스크립트를 포함한 모든 트러블슈팅 과정을 문서화하여 하드웨어-OS 간 인터럽트 문제에 대한 가이드라인 제시
+  </details>
 
 ---
+
 
 
 
