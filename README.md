@@ -49,6 +49,18 @@
   - **Evidence-Based Debugging**: 실패한 자동화 스크립트를 포함한 모든 트러블슈팅 과정을 문서화하여 하드웨어-OS 간 인터럽트 문제에 대한 가이드라인 제시
   </details>
 
+* **[JK-fix-endfield-BGFPSLIMIT-DX11](https://github.com/junsarakill/JK-fix-endfield-BGFPSLIMIT-DX11)** : 고사양 게임 클라이언트의 백그라운드 리소스 점유 최적화 기록
+  <details>
+  <summary>해결 과정 및 인사이트</summary>
+  
+  * **Diagnostic Troubleshooting**: RTSS(RivaTuner)를 활용한 런타임 API 호출 분석 및 Vulkan/DX11 환경 간의 리소스 제어 충돌 규명
+  * **Engine Parameter Injection**: 유니티 엔진의 커맨드 라인 인수(`-force-d3d11`)를 강제 주입하여, 그래픽 렌더링 API를 전환함으로써 NVIDIA 제어판의 제한 정책 활성화
+  * **Sub-process Argument Manipulation**: 실행 도구의 내부 메커니즘(`Internal Argument Routing`)을 역분석하여, 클라이언트 실행 인수를 동적으로 제어하는 고도화된 런처 환경 구축
+  * **Performance Optimization**: 외부 도구의 호환성을 유지하면서도 운영체제 레벨의 프레임 제한 설정을 적용하여, 고사양 작업 중에도 유휴 리소스 점유율을 최소화하는 효율적 환경 구현
+
+
+  </details>
+
 ---
 
 
