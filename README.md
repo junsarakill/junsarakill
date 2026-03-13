@@ -18,7 +18,7 @@
 * **[JKMediaHotKey](https://github.com/junsarakill/JKMediaHotKey)** : 게임 환경에서의 입력 차단을 우회하는 시스템 레벨 미디어 제어 유틸리티
   <details>
   <summary>주요 기능 및 특징</summary>
-  
+
   - **Input Hook Bypass**: 특정 게임이 마우스/키보드 입력을 독점(Exclusive Mode)하여 미디어 키가 작동하지 않는 현상을 가상 키(`F13`) 매핑을 통해 해결
   - **Low-Level Message Transmission**: 단순 키 에뮬레이션이 아닌 `WM_APPCOMMAND`(0x319) 메시지를 시스템(Program Manager)에 직접 포스팅하여 가장 확실한 실행 보장
   - **Hardware-Software Bridge**: 로지텍 G-Hub 등 하드웨어 매크로와 소프트웨어 스크립트를 결합하여 물리 버튼의 한계를 극복한 사용자 정의 워크플로우 구현
@@ -57,14 +57,21 @@
   * **Engine Parameter Injection**: 유니티 엔진의 커맨드 라인 인수(`-force-d3d11`)를 강제 주입하여, 그래픽 렌더링 API를 전환함으로써 NVIDIA 제어판의 제한 정책 활성화
   * **Sub-process Argument Manipulation**: 실행 도구의 내부 메커니즘(`Internal Argument Routing`)을 역분석하여, 클라이언트 실행 인수를 동적으로 제어하는 고도화된 런처 환경 구축
   * **Performance Optimization**: 외부 도구의 호환성을 유지하면서도 운영체제 레벨의 프레임 제한 설정을 적용하여, 고사양 작업 중에도 유휴 리소스 점유율을 최소화하는 효율적 환경 구현
+  </details>
+
+* **[JK-HDR-Conflict-Fix](https://github.com/junsarakill/JK-HDR-Conflict-Fix)** : OS와 GPU 드라이버 간의 HDR 렌더링 파이프라인 간섭 해결 기록
+  <details>
+  <summary>해결 과정 및 인사이트</summary>
+
+  * **Rendering Pipeline Analysis**: Windows **Auto HDR**과 NVIDIA **RTX HDR**이 동일한 렌더링 파이프라인 상에서 중복 활성화될 때 발생하는 색역(`Color Gamut`) 왜곡 현상 규명
+  * **Conflict Identification**: OS 레벨의 기본 기능과 하드웨어 벤더 소프트웨어 간의 계층적 기능 충돌(`Layered Functional Conflict`)을 문제의 근본 원인으로 식별
+  * **Comparative Quality Assessment**: 두 HDR 가속 엔진의 출력 품질을 비교 분석하여, 특정 게임에서 OS 표준 API가 가지는 색 재현력의 우위와 안정성 검증
+  * **Optimization Strategy**: HDR 가속 엔진 단일화 및 불필요한 GPU 후처리 프로세스 제거를 통해 시스템 리소스 낭비를 방지하고 의도된 색상 범위를 복원
+  * **Root Cause Priority Debugging**: 시스템 업데이트나 하드웨어 고장을 의심하기에 앞서, 소프트웨어 계층 간의 상호작용을 우선 점검하는 논리적 디버깅 프로세스 확립
 
 
   </details>
-
 ---
-
-
-
 
 
 
